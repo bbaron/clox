@@ -1,0 +1,31 @@
+{
+    print "scope 1";
+    var a = 1;
+    {
+        print "scope 2";
+        var b = 2;
+        {
+            print "scope 3";
+            var c = 3;
+            {
+                print "scope 4";
+                var d = 4;
+                print a;
+                print b;
+                print c;
+                print d;
+                print "end 4";
+            }
+            var e = 5;
+            print "end 3";
+        }
+        print "end 2";
+    }
+    var f = 6;
+    {
+        print "scope 2";
+        var g = 7;
+        print "end 2";
+    }
+    print "end 1";
+}

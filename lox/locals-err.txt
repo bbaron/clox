@@ -1,0 +1,10 @@
+//{
+//  var a = "first";
+//  var a = "second";
+//}
+{
+    var a = "outer";
+    {
+        var a = a;
+    }
+}
