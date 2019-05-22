@@ -1,0 +1,19 @@
+for (var x = 0; x < 3; x = x + 1) {
+    print(x);
+}
+
+// See if the matrix contains a zero.
+var found = false;
+var xSize = 3;
+var ySize = 3;
+var zSize = 3;
+for (var x = 0; x < xSize and !found; x = x + 1) {
+  for (var y = 0; y < ySize and !found; y = y + 1) {
+    for (var z = 0; z < zSize and !found; z = z + 1) {
+      if (x == 2 and y == 1 and z == 0) {
+        print("found");
+        found = true;
+      }
+    }
+  }
+}
